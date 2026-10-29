@@ -2,7 +2,7 @@
 
 A Claude skill that helps founders write a Y Combinator application a partner can understand in one read, record a founder video that sounds like them, and walk into the 10-minute interview ready.
 
-It drafts every answer from facts you can back up, in your own voice, and tells you plainly when the weak spot is the company and not the wording. Built for founders applying to YC (and similar accelerators), by [Evalyze](https://evalyze.ai).
+It drafts every answer from facts you can back up, in your own voice, and tells you plainly when the weak spot is the company and not the wording. Built for founders applying to YC (and similar accelerators) by [Evalyze](https://www.evalyze.ai/?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach), the AI fundraising platform for pre-seed to Series A founders. Free to use, MIT licensed.
 
 ---
 
@@ -82,11 +82,14 @@ It was tested in eight sessions on realistic founder cases, including a draft bu
 
 ## Install
 
-### Claude (web or desktop)
+### Claude (web or desktop app)
 
-1. Download [`yc-application-coach.skill`](./yc-application-coach.skill) from this repo.
-2. Upload it as a custom skill in Claude's settings, under Skills.
-3. That's all the setup. The skill triggers when you mention applying to YC, paste an application answer, share a founder video transcript, or say you got a YC interview.
+1. Download [`yc-application-coach.zip`](./yc-application-coach.zip) from this repo. The [`.skill`](./yc-application-coach.skill) file has the same contents if you prefer it.
+2. Make sure code execution is on. On Free, Pro and Max plans that's under Settings > Capabilities ("Code execution and file creation"). On Team and Enterprise plans, an owner turns on Skills in organization settings.
+3. Go to Customize > Skills, click "+", then "Create skill", then "Upload a skill", and choose the zip.
+4. Leave it switched on. It triggers by itself when you mention applying to YC, paste an application answer, share a founder video transcript, or say you got a YC interview.
+
+Anthropic's guide, if you get stuck: [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 ### Claude Code
 
@@ -152,7 +155,7 @@ yc-application-coach/
 
 **v1.0, October 2026.** Facts were checked against YC's pages on October 28 and 29, 2026, when YC was taking Winter 2027 applications. YC changes its form and calendar every batch, so always check [ycombinator.com/apply](https://www.ycombinator.com/apply) before you submit.
 
-If you use it and something feels off, please [open an Issue](../../issues). A real example of where it went wrong is more useful than a compliment.
+If you use it and something feels off, please [open an Issue](https://github.com/evalyze-ai/yc-application-coach/issues). A real example of where it went wrong is more useful than a compliment.
 
 ---
 
@@ -162,12 +165,27 @@ Nothing can buy you a spot at YC, and this skill doesn't pretend otherwise. YC s
 
 ---
 
-## License
+## About Evalyze
 
-MIT. Use it, change it, share it.
+[Evalyze](https://www.evalyze.ai/?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach) is an AI fundraising platform for pre-seed to Series A founders, with 15K+ founders and 20K+ verified investors on it. Founders use it to find investors who fit their stage and sector, sharpen their deck, and run outreach from one place. A YC application and a seed round ask a lot of the same questions, so if you're raising alongside or after YC, these are good places to start:
+
+- [Investor Matching](https://www.evalyze.ai/investor-matching?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach) ranks investors by stage, sector, location, check size and investment history, and you decide who to approach.
+- [Investor Outreach](https://www.evalyze.ai/outreach?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach) drafts personalized emails you approve before anything sends from your own inbox, then tracks replies and follow-ups.
+- [Startup Analyzer](https://www.evalyze.ai/startup-analyzer?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach) scores your startup across six areas against companies at your stage, including an investor readiness score.
+- [Pitch Deck Coach](https://www.evalyze.ai/pitch-coach?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach) gives your deck a score out of 100 with slide-by-slide feedback.
+- [Managed Fundraising](https://www.evalyze.ai/managed-fundraising?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach) is for founders who want an ex-VC-led team to run the raise with them, for one flat monthly fee with no equity or success fee.
+- The Starter plan is free with no card required. See [pricing](https://www.evalyze.ai/pricing?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach).
+
+Free guides on the [Evalyze blog](https://www.evalyze.ai/blog?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach), including the [pre-seed fundraising playbook](https://www.evalyze.ai/blog/pre-seed-fundraising-playbook?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach) and the [startup fundraising checklist](https://www.evalyze.ai/blog/startup-fundraising-checklist?utm_source=github&utm_medium=readme&utm_campaign=yc-application-coach).
+
+### More free tools from Evalyze
+
+- [founder-fundraising-outreach](https://github.com/evalyze-ai/founder-fundraising-outreach): a Claude skill for investor outreach that reads like a human wrote it, covering cold emails, follow-ups, investor replies and post-meeting recaps.
+- [awesome-startup-fundraising](https://github.com/evalyze-ai/awesome-startup-fundraising): a curated list of tools for evaluating startups, improving pitch materials and running a raise.
+- All of them live at [github.com/evalyze-ai](https://github.com/evalyze-ai).
 
 ---
 
-## Built by
+## License
 
-[Evalyze](https://evalyze.ai), the AI fundraising platform with 15K+ founders and 20K+ verified investors. If you're raising alongside or after YC, Evalyze matches you with investors and drafts outreach you approve before anything sends. More free tools for founders at [github.com/evalyze-ai](https://github.com/evalyze-ai).
+MIT. Use it, change it, share it.
